@@ -6,7 +6,7 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const { Parser } = require('json2csv');
-require('dotenv').config({ path: './my.env' });
+require('dotenv').config();
 
 const { User, Admin ,UserActivity ,SecurityAlert } = require('./models');
 const app = express();
