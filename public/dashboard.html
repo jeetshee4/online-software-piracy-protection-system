@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Online Software Piracy Protection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>User Dashboard</h1>
+            <p>Welcome, <span id="username-display"></span>!</p>
+            
+            <section id="license-section">
+                <h2>License Management</h2>
+                <p>Your current license key: <span id="current-license-key"></span></p>
+                
+                <h3>Validate License Key</h3>
+                <form id="validate-license-form">
+                    <input type="text" id="license-key-input" placeholder="Enter license key to validate" required>
+                    <button type="submit">Validate Key</button>
+                </form>
+                <p id="validation-result"></p>
+            </section>
+
+            <section id="device-info-section">
+                <h2>Device Information</h2>
+                <p>Current Device ID: <span id="device-id-display"></span></p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Software Piracy Protection System</p>
+    </footer>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>

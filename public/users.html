@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users - Online Software Piracy Protection System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>View Users</h1>
+
+            <div class="search-filter">
+                <input type="text" id="search-input" placeholder="Search by username or email">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>License Key</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User data will be populated here -->
+                </tbody>
+            </table>
+
+            <button id="export-users-btn">Export Users</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Software Piracy Protection System</p>
+    </footer>
+
+    <script src="users.js"></script> <!-- Link to your JS file for user management -->
+</body>
+</html>

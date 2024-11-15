@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Software Piracy Protection System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+            <h2>User Activity</h2>
+            <table id="user-activity-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                        <th>Timestamp</th>
+                        <th>Device ID</th>
+                        <th>IP Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User activity details will be populated here -->
+                </tbody>
+            </table>
+
+            <h2>Security Alerts</h2>
+            <div id="security-alerts" aria-live="polite">
+                <!-- Security alerts will be displayed here -->
+                <p>No security alerts to display.</p> <!-- Placeholder for no alerts -->
+            </div>
+            <h2>User Management</h2>
+            <div class="user-management-buttons">
+                <button id="view-users-btn">View Users</button>
+                <button id="search-users-btn">Search Users</button>
+                <button id="export-users-btn">Export Users</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Software Piracy Protection System</p>
+    </footer>
+
+    <script src="admin-dashboard.js"></script> <!-- Link to your JS file for admin dashboard -->
+</body>
+</html>
